@@ -1,5 +1,26 @@
+body {
+    background-color: oldlace;
+    display: flex;
+    justify-content: space-between;
+}
+
 .App {
     display: flex;
     align-items: center;
     flex-direction: row;
+}
+.MainPage {
+    margin-left: 300px;
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.Service {
+    margin-left: 200px;
+    color: blue;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
 }
