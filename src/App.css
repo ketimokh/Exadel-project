@@ -1,67 +1,163 @@
 body {
-    background-color: oldlace;
+    background-color: #ebe5e5;
 }
 
-.app {
-    background-color: #d0d2d5;
-    width: 1008px;
-    height: auto;
-    margin: 0 auto;
-    align-items: center;
+.container{
+    max-width: 1008px;
+    width: 100%;
+    padding: 0;
+    margin:0  auto;
 }
-.test {
+.banner-image{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.navBarMenu {
+    width: 100%;
     display: flex;
     align-items: center;
 }
-.banner-image{
-    width: 1008px;
-    height: 200px;
-}
 
 .mainPage {
+    background-color: grey;
     margin-left: 100px;
     color: black;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 5px 50px 5px 50px;
 }
 
 .service {
     margin-left: 200px;
     color: black;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
 }
-.mouse {
+
+.service-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    height: 200px;
+    border: solid 1px #e7e0e0;
+    margin: 0 8px 80px 4px;
+    box-shadow: 1px 1px 6px 1px  #d9d5d5;
+}
+
+.service-button {
+    margin-top: 80px;
+    padding: 10px 80px 10px 80px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    tab-size: 15px;
+    border: none;
+
+}
+.posts-wrapper{
     margin-top:100px ;
     display: flex;
     justify-content: space-between;
+    flex-flow: row wrap;
 }
 
-.one-mouse {
+.post-wrapper {
     width: 400px;
     height: 200px;
-    border: solid 1px black;
-    box-shadow: 5px 10px #888888;
+    border: solid 1px #e7e0e0;
+    margin: 0 4px 80px 4px;
+    box-shadow: 1px 1px 6px 1px  #d9d5d5;
 }
 
-.mouse-title {
+.post-title {
     color: black;
     padding-left: 20px;
-    font-size: 40px;
     font-weight: bold;
 }
-.mouse-text {
+.post-text {
+    padding-top: 20px;
     padding-left: 20px;
-    color: black;
-    font-size: 30px;
+    color: lightslategray;
+    font-size: 18px;
+}
+.postFlex {
+    justify-content: space-between;
+}
+.button-bottom{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.post-button {
+    text-align: end;
+    margin: 30px 20px  0 ;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: unset;
 }
 .footer{
     padding-top: 50px;
     text-align: center;
-    margin-top: 100px;
     background-color: lightsteelblue;
     height: 100px;
     color: white;
+    margin-bottom: 20px ;
 }
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+}
+.close {
+    color: black;
+    font-size: 20px;
+    padding: 25px ;
+    cursor: pointer;
+}
+
+.modal-title {
+    padding-left: 20px;
+    margin: 20px 0 20px 0;
+    color: black;
+    font-weight: bold;
+}
+.modal-image {
+    padding-left: 20px;
+}
+.darkBG {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal {
+    width: 800px;
+    height: 400px;
+    background: white;
+    color: white;
+    z-index: 10;
+    border: solid 1px #e7e0e0;
+    box-shadow: 1px 1px 6px 1px  #d9d5d5;
+}
+
+

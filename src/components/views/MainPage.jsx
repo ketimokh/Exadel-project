@@ -1,35 +1,40 @@
+import {useEffect, useState} from "react";
+import PostModal from "./PostModal";
+
 const MainPage = () => {
+        const [posts, setPosts] = useState([])
+        const [post, setPost] = useState(null)
+
+        useEffect(() => {
+                fetch('https://api.npoint.io/44c1c313d40c0811ad19?fbclid=IwAR0aHCzzz2cy35cADlBCVZT0Dp0nFghbwAsKpTw-bDh-CrTaDJlIAVE3oCI')
+                    .then((res)=> res.json())
+                    .then((data) => setPosts(data.slice(0, 6)))
+            },[])
+
     return (
         <>
-            <div className='mouse'>
-                <div className='one-mouse'>
-                    <h2 className='mouse-title'> post </h2>
-                    <p className='mouse-text'> საცდელი ვირთხა</p>
-                </div>
-                <div className='one-mouse'>
-                    <h2 className='mouse-title'> post </h2>
-                    <p className='mouse-text'> საცდელი ვირთხა</p>
-                </div>
+            <div>
+                < img className='banner-image' src="https://www.tangerineholdings.co.uk/wp-content/uploads/contact-banner.jpg" alt="SecurityLogo"/>
             </div>
-            <div className='mouse'>
-                <div className='one-mouse'>
-                    <h2 className='mouse-title'> post </h2>
-                    <p className='mouse-text'> საცდელი ვირთხა</p>
-                </div>
-                <div className='one-mouse'>
-                    <h2 className='mouse-title'> post </h2>
-                    <p className='mouse-text'> საცდელი ვირთხა</p>
-                </div>
-            </div>
-            <div className='mouse'>
-                <div className='one-mouse'>
-                    <h2 className='mouse-title'> post </h2>
-                    <p className='mouse-text'> საცდელი ვირთხა</p>
-                </div>
-                <div className='one-mouse'>
-                    <h2 className='mouse-title'> post </h2>
-                    <p className='mouse-text'> საცდელი ვირთხა</p>
-                </div>
+            <div className='posts-wrapper'>
+                {
+                    posts.map((el) => {
+                        return (
+                                <div key={el.id} className='post-wrapper postFlex'>
+                                    <div>
+                                        <h3 className='post-title'> {el.title} </h3>
+                                        <p className='post-text'> {el.description}</p>
+                                    </div>
+                                    <div className='button-bottom'>
+                                        <button type='button' onClick={() => setPost(el)} className='post-button'>
+                                            View post
+                                        </button>
+                                    </div>
+                                </div>
+                        )
+                    })
+                }
+                {post !== null ? <PostModal post={post} setPost={setPost} /> : null}
             </div>
         </>
     )
