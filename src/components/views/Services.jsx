@@ -1,47 +1,39 @@
-//import {useState} from "react";
-
+import {useEffect, useState} from "react";
+import PostModal from "./PostModal";
+import ServiceFormPage from "./ServiseFormPage";
 
 const Services = () => {
-    // const [title, setTitle] = useState('')
-    // const [description, setDescription] = useState('')
-    // const [image, setImage] = useState('')
-    //
-    // const handleSubmit = (e) => {
-    //     e.preventDefault()
-    //     const services = { title, description, image}
-    //
-    //     fetch('http://localhost:3000/services',{
-    //         method: 'POST',
-    //         headers: {'Content-Type': 'application/json'},
-    //         body: JSON.stringify(services)
-    //
-    //     }).then(() => {
-    //         console.log(' add new services')
-    //     })
-    // }
+    const [services, setServices] = useState([])
+    const [service, setService] = useState(null)
+
+    useEffect(() => {
+        fetch('https://api.npoint.io/44c1c313d40c0811ad19?fbclid=IwAR0aHCzzz2cy35cADlBCVZT0Dp0nFghbwAsKpTw-bDh-CrTaDJlIAVE3oCI')
+            .then((res)=> res.json())
+            .then((data) => setServices(data.slice(0, 2)))
+    },[])
     return (
     <>
         <div>
-            <button type='button' className='service-button' >
+            <button type='button' className='service-button' onClick={() => setService(services)}  >
                 add new service
             </button>
         </div>
         <div className='posts-wrapper'>
-            <div className='service-wrapper'>
-                <div>
-                    <h2 className='post-title'> service </h2>
-                    <p className='post-text'> საცდელი ვირთხა</p>
-                </div>
-                <img style={{width: 100}} src="https://1757140519.rsc.cdn77.org/static/v3/img/products/logo.png" alt="SecurityLogo"/>
+            {
+                services.map((item) => {
+                    return (
+                        <div key={item.id} className='service-wrapper'>
+                            <div>
+                                <h2 className='post-title'> {item.title} </h2>
+                                <p className='post-text'> {item.description}</p>
+                            </div>
+                            <img style={{width: 100}} src={item.image} alt="SecurityLogo"/>
 
-            </div>
-            <div className='service-wrapper'>
-                <div>
-                    <h2 className='post-title'> service </h2>
-                    <p className='post-text'> საცდელი ვირთხა</p>
-                </div>
-                <img style={{width: 100}} src="https://diginomica.com/sites/default/files/images/2014-09/customer-service.0822.12.jpg" alt="SecurityLogo"/>
-            </div>
+                        </div>
+                    )
+                })
+            }
+            {service !== null ? <ServiceFormPage service={service} setService={setService} /> : null}
         </div>
     </>
     )
