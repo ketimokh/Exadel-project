@@ -13,8 +13,10 @@ const MainPage = () => {
 
     return (
         <>
-            <div>
-                < img className='banner-image' src="https://www.tangerineholdings.co.uk/wp-content/uploads/contact-banner.jpg" alt="SecurityLogo"/>
+            <div className='banner-image'>
+                <div className='banner-title'>
+                    <h1> Travel In GEORGIA </h1>
+                </div>
             </div>
             <div className='posts-wrapper'>
                 {
