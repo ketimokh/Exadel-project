@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/https//ketimokh.githhub.io/Exadel-project/static/css/main.dd4585bb.css",
+    "main.js": "/https//ketimokh.githhub.io/Exadel-project/static/js/main.f0a0695c.js",
+    "static/media/svaneti.jpg": "/https//ketimokh.githhub.io/Exadel-project/static/media/svaneti.394ca1ee00bf52b07380.jpg",
+    "index.html": "/https//ketimokh.githhub.io/Exadel-project/index.html",
+    "main.dd4585bb.css.map": "/https//ketimokh.githhub.io/Exadel-project/static/css/main.dd4585bb.css.map",
+    "main.f0a0695c.js.map": "/https//ketimokh.githhub.io/Exadel-project/static/js/main.f0a0695c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd4585bb.css",
+    "static/js/main.f0a0695c.js"
+  ]
+}
