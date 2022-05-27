@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import MainPage from "./components/views/MainPage";
 import Services from "./components/views/Services";
 import './Reset.css'
