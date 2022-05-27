@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/https//ketimokh.githhub.io/Exadel-project/static/css/main.dd4585bb.css",
-    "main.js": "/https//ketimokh.githhub.io/Exadel-project/static/js/main.f0a0695c.js",
-    "static/media/svaneti.jpg": "/https//ketimokh.githhub.io/Exadel-project/static/media/svaneti.394ca1ee00bf52b07380.jpg",
-    "index.html": "/https//ketimokh.githhub.io/Exadel-project/index.html",
-    "main.dd4585bb.css.map": "/https//ketimokh.githhub.io/Exadel-project/static/css/main.dd4585bb.css.map",
-    "main.f0a0695c.js.map": "/https//ketimokh.githhub.io/Exadel-project/static/js/main.f0a0695c.js.map"
+    "main.css": "/https//ketimokh.github.io/Exadel-project/static/css/main.8e3a1769.css",
+    "main.js": "/https//ketimokh.github.io/Exadel-project/static/js/main.661f1fe7.js",
+    "static/media/svaneti.jpg": "/https//ketimokh.github.io/Exadel-project/static/media/svaneti.394ca1ee00bf52b07380.jpg",
+    "index.html": "/https//ketimokh.github.io/Exadel-project/index.html",
+    "main.8e3a1769.css.map": "/https//ketimokh.github.io/Exadel-project/static/css/main.8e3a1769.css.map",
+    "main.661f1fe7.js.map": "/https//ketimokh.github.io/Exadel-project/static/js/main.661f1fe7.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd4585bb.css",
-    "static/js/main.f0a0695c.js"
+    "static/css/main.8e3a1769.css",
+    "static/js/main.661f1fe7.js"
   ]
 }
