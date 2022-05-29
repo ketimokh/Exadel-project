@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
-import PostModal from "./PostModal";
 import ServiceFormPage from "./ServiseFormPage";
+import Tbilisi from '../../images/tbilisi.jpg'
 
 const Services = () => {
     const [services, setServices] = useState([])
@@ -14,7 +14,7 @@ const Services = () => {
     return (
     <>
         <div>
-            <button type='button' className='service-button' onClick={() => setService(services)}  >
+            <button type='button' className='service-button' onClick={() => setService({title: '', description: ''})}  >
                 add new service
             </button>
         </div>
@@ -27,13 +27,16 @@ const Services = () => {
                                 <h2 className='post-title'> {item.title} </h2>
                                 <p className='post-text'> {item.description}</p>
                             </div>
-                            <img style={{width: 100}} src={item.image} alt="SecurityLogo"/>
-
+                            <img
+                                style={{width: 100, height: 100}}
+                                src={Tbilisi}
+                                alt="Tbilisi City"
+                            />
                         </div>
                     )
                 })
             }
-            {service !== null ? <ServiceFormPage service={service} setService={setService} /> : null}
+            {service !== null ? <ServiceFormPage service={service} setServices={setServices} /> : null}
         </div>
     </>
     )

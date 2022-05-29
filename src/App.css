@@ -17,6 +17,10 @@ body {
     border-radius: 10px;
 }
 
+input:focus-visible {
+    outline: none;
+}
+
 .banner-title {
     align-items: center;
     position: absolute;
