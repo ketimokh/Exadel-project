@@ -18,11 +18,12 @@ const App = () => {
                           <img style={{width: 100}} src={Logo} alt="SecurityLogo"/>
                       </Link>
                       <nav>
-                          <CustomLink  to="/main-page" >Main</CustomLink>
+                          <CustomLink  to="/" >Main</CustomLink>
                           <CustomLink  to="/services">Services</CustomLink>
                       </nav>
                   </div>
                   <Routes>
+                      <Route path="/" element={<MainPage/>}/>
                           <Route path="/main-page" element={<MainPage/>}/>
                           <Route path="/services" element={<Services/>}/>
                   </Routes>
