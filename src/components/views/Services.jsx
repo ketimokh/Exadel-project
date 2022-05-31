@@ -23,7 +23,7 @@ const Services = () => {
                 services.map((item) => {
                     return (
                         <div key={item.id} className='service-wrapper'>
-                            <div>
+                            <div className='service-content'>
                                 <h2 className='post-title'> {item.title} </h2>
                                 <p className='post-text'> {item.description}</p>
                             </div>

@@ -60,6 +60,13 @@ input:focus-visible {
     box-shadow: 1px 1px 6px 1px  #d9d5d5;
 }
 
+.service-wrapper img {
+    margin: 15px;
+}
+.service-content{
+    padding-top: 10px;
+}
+
 .service-button {
     margin-top: 80px;
     padding: 10px 80px 10px 80px;
