@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/exadel-project/static/css/main.f13c58f6.css",
-    "main.js": "/exadel-project/static/js/main.b0f7d9a2.js",
+    "main.css": "/exadel-project/static/css/main.8fd33cb8.css",
+    "main.js": "/exadel-project/static/js/main.37718e55.js",
     "static/media/tbilisi.jpg": "/exadel-project/static/media/tbilisi.c86cefbe8ad1aef384ee.jpg",
     "static/media/svaneti.jpg": "/exadel-project/static/media/svaneti.394ca1ee00bf52b07380.jpg",
     "index.html": "/exadel-project/index.html",
-    "main.f13c58f6.css.map": "/exadel-project/static/css/main.f13c58f6.css.map",
-    "main.b0f7d9a2.js.map": "/exadel-project/static/js/main.b0f7d9a2.js.map"
+    "main.8fd33cb8.css.map": "/exadel-project/static/css/main.8fd33cb8.css.map",
+    "main.37718e55.js.map": "/exadel-project/static/js/main.37718e55.js.map"
   },
   "entrypoints": [
-    "static/css/main.f13c58f6.css",
-    "static/js/main.b0f7d9a2.js"
+    "static/css/main.8fd33cb8.css",
+    "static/js/main.37718e55.js"
   ]
 }
