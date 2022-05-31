@@ -12,33 +12,34 @@ const Services = () => {
             .then((data) => setServices(data.slice(0, 2)))
     },[])
     return (
-    <>
-        <div>
-            <button type='button' className='service-button' onClick={() => setService({title: '', description: ''})}  >
-                add new service
-            </button>
-        </div>
-        <div className='posts-wrapper'>
-            {
-                services.map((item) => {
-                    return (
-                        <div key={item.id} className='service-wrapper'>
-                            <div className='service-content'>
-                                <h2 className='post-title'> {item.title} </h2>
-                                <p className='post-text'> {item.description}</p>
+        <div className='service-container'>
+            <div>
+                <button type='button' className='service-button' onClick={() => setService({title: '', description: ''})}  >
+                    add new service
+                </button>
+            </div>
+            <div className='posts-wrapper'>
+                {
+                    services.map((item) => {
+                        return (
+                            <div key={item.id} className='service-wrapper'>
+                                <div className='service-content'>
+                                    <h2 className='post-title'> {item.title} </h2>
+                                    <p className='post-text'> {item.description}</p>
+                                </div>
+                                <img
+                                    style={{width: 100, height: 100}}
+                                    src={Tbilisi}
+                                    alt="Tbilisi City"
+                                />
                             </div>
-                            <img
-                                style={{width: 100, height: 100}}
-                                src={Tbilisi}
-                                alt="Tbilisi City"
-                            />
-                        </div>
-                    )
-                })
-            }
-            {service !== null ? <ServiceFormPage service={service} setServices={setServices} /> : null}
+                        )
+                    })
+                }
+                {service !== null ? <ServiceFormPage service={service} setServices={setServices} setService={setService} /> : null}
+            </div>
         </div>
-    </>
+
     )
 }
 

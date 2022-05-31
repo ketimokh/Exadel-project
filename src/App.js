@@ -3,7 +3,6 @@ import MainPage from "./components/views/MainPage";
 import Services from "./components/views/Services";
 import './Reset.css'
 import './App.css'
-//import Layout from "./components/views/Leyout";
 import Logo from "./images/logo.png";
 import CustomLink from "./components/views/CustumLink";
 

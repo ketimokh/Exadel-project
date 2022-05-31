@@ -1,13 +1,19 @@
 body {
     background-color: #ebe5e5;
+    overflow: auto;
 }
 
 .container{
     max-width: 1008px;
     width: 100%;
     padding: 0;
-    margin:0  auto;
+    margin: 0  auto;
 }
+
+.image-container {
+    max-width: 100%;
+}
+
 .banner-image{
     position: relative;
     background-repeat: no-repeat;
@@ -67,6 +73,10 @@ input:focus-visible {
     padding-top: 10px;
 }
 
+.service-container {
+    width: 100%;
+}
+
 .service-button {
     margin-top: 80px;
     padding: 10px 80px 10px 80px;
@@ -87,6 +97,8 @@ input:focus-visible {
 }
 
 .post-wrapper {
+    display: flex;
+    flex-direction: column ;
     width: 400px;
     height: 200px;
     border: solid 1px #e7e0e0;
@@ -95,6 +107,7 @@ input:focus-visible {
 }
 
 .post-title {
+    padding-top: 15px;
     color: black;
     padding-left: 20px;
     font-weight: bold;
@@ -109,8 +122,8 @@ input:focus-visible {
     justify-content: space-between;
 }
 .button-bottom{
-    display: flex;
-    justify-content: flex-end;
+    margin-bottom: 20px;
+    align-self: end;
 }
 
 .post-button {
@@ -152,14 +165,14 @@ input:focus-visible {
     padding-left: 20px;
 }
 .darkBG {
+    position: fixed;
     background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
-    height: 100vh;
-    z-index: 0;
+    max-height: 100vh;
+    z-index: 33333;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    position: absolute;
 }
 .centered {
     position: fixed;
@@ -169,7 +182,7 @@ input:focus-visible {
 }
 
 .modal {
-    width: 800px;
+    width: 100%;
     height: 400px;
     background: white;
     color: white;
@@ -178,10 +191,10 @@ input:focus-visible {
     box-shadow: 1px 1px 6px 1px  #d9d5d5;
 }
 .service-form{
-    width: 800px;
-    height: 700px;
+    width: 100%;
+    height: 600px;
     align-items: start;
-    background: white;
+    background-color: #ebe5e5;
     display: flex;
     flex-direction: column;
     z-index: 100;
@@ -191,11 +204,12 @@ input:focus-visible {
 .content {
     width: 700px;
     height: 600px;
-    margin-left: 30px;
+    margin: 0 30px 0 20px;
 }
 .service-form-title{
     color: black;
-    font-size: 30px;
+    font-size: 15px;
+    font-weight: bold;
 }
 .service {
     display: flex;
@@ -212,6 +226,10 @@ input:focus-visible {
     border: 1px solid grey;
     width: 100%;
     height: 200px;
+}
+
+.textarea:focus-visible {
+    outline: none;
 }
 
 .close {
