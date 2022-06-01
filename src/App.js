@@ -23,7 +23,6 @@ const App = () => {
                   </div>
                   <Routes>
                       <Route path="/exadel-project/main-page" exact element={<MainPage/>}/>
-                          {/*<Route path="/exadel-project/main-page" element={<MainPage/>}/>*/}
                           <Route path="/exadel-project/services" element={<Services/>}/>
                   </Routes>
                   <footer className='footer'>
