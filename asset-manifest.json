@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/exadel-project/static/css/main.f342978b.css",
-    "main.js": "/exadel-project/static/js/main.cd3e0593.js",
-    "static/media/tbilisi.jpg": "/exadel-project/static/media/tbilisi.c86cefbe8ad1aef384ee.jpg",
-    "static/media/svaneti.jpg": "/exadel-project/static/media/svaneti.394ca1ee00bf52b07380.jpg",
-    "index.html": "/exadel-project/index.html",
-    "main.f342978b.css.map": "/exadel-project/static/css/main.f342978b.css.map",
-    "main.cd3e0593.js.map": "/exadel-project/static/js/main.cd3e0593.js.map"
+    "main.css": "/exadel-project/main-page/static/css/main.46cbef2c.css",
+    "main.js": "/exadel-project/main-page/static/js/main.5ecbbcea.js",
+    "static/media/tbilisi.jpg": "/exadel-project/main-page/static/media/tbilisi.c86cefbe8ad1aef384ee.jpg",
+    "static/media/svaneti.jpg": "/exadel-project/main-page/static/media/svaneti.394ca1ee00bf52b07380.jpg",
+    "index.html": "/exadel-project/main-page/index.html",
+    "main.46cbef2c.css.map": "/exadel-project/main-page/static/css/main.46cbef2c.css.map",
+    "main.5ecbbcea.js.map": "/exadel-project/main-page/static/js/main.5ecbbcea.js.map"
   },
   "entrypoints": [
-    "static/css/main.f342978b.css",
-    "static/js/main.cd3e0593.js"
+    "static/css/main.46cbef2c.css",
+    "static/js/main.5ecbbcea.js"
   ]
 }
