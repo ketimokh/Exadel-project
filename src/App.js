@@ -13,18 +13,18 @@ const App = () => {
           <BrowserRouter>
               <div className='container'>
                   <div className='navBarMenu'>
-                      <Link to="/main-page">
+                      <Link to="exadel-project/main-page">
                           <img style={{width: 100}} src={Logo} alt="SecurityLogo"/>
                       </Link>
                       <nav>
-                          <CustomLink  to="/" >Main</CustomLink>
-                          <CustomLink  to="/services">Services</CustomLink>
+                          <CustomLink  to="/exadel-project/main-page" >Main</CustomLink>
+                          <CustomLink  to="/exadel-project/services">Services</CustomLink>
                       </nav>
                   </div>
                   <Routes>
-                      <Route path="/" element={<MainPage/>}/>
-                          <Route path="/main-page" element={<MainPage/>}/>
-                          <Route path="/services" element={<Services/>}/>
+                      <Route path="/exadel-project/main-page" exact element={<MainPage/>}/>
+                          {/*<Route path="/exadel-project/main-page" element={<MainPage/>}/>*/}
+                          <Route path="/exadel-project/services" element={<Services/>}/>
                   </Routes>
                   <footer className='footer'>
                       <p> Made by Keti Mokhevishvili 31/05/2022</p>
