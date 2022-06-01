@@ -27,7 +27,6 @@ const ServiceFormPage = (props) => {
 
     return (
         <>
-            <div className='darkBG'>
                 <div className='centered'>
                     <div className='service-form'>
                         <form onSubmit={formik.handleSubmit}>
@@ -80,7 +79,7 @@ const ServiceFormPage = (props) => {
                         </form>
                     </div>
                 </div>
-            </div>
+            <div className='darkBG'> </div>
         </>
     )
 }

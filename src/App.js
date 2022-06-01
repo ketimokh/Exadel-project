@@ -5,6 +5,7 @@ import './Reset.css'
 import './App.css'
 import Logo from "./images/logo.png";
 import CustomLink from "./components/views/CustumLink";
+import NavBar from "./components/views/NavBar";
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
                       <Link to="exadel-project">
                           <img style={{width: 100}} src={Logo} alt="SecurityLogo"/>
                       </Link>
+                      < NavBar className='nav-menu'/>
                       <nav>
                           <CustomLink  to="/exadel-project" >Main</CustomLink>
                           <CustomLink  to="/exadel-project/services">Services</CustomLink>
