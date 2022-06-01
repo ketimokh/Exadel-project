@@ -189,7 +189,6 @@ input:focus-visible {
     background: white;
     color: white;
     z-index: 1005;
-    opacity: 1.5;
     border: solid 1px #e7e0e0;
     box-shadow: 1px 1px 6px 1px  #d9d5d5;
 }
