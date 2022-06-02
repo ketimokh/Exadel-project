@@ -13,7 +13,7 @@ const Services = () => {
     },[])
     return (
         <div className='service-container'>
-            <div>
+            <div className='add-form'>
                 <button type='button' className='service-button' onClick={() => setService({title: '', description: ''})}  >
                     add new service
                 </button>

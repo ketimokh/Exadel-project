@@ -1,14 +1,17 @@
+/*Common styles*/
+
 body {
     background-color: #ebe5e5;
     overflow: auto;
 }
 
 .container{
-    max-width: 1008px;
-    width: 100%;
+    max-width: 630px;
     padding: 0;
     margin: 0  auto;
 }
+
+/*banner styles*/
 
 .image-container {
     max-width: 100%;
@@ -23,10 +26,6 @@ body {
     border-radius: 10px;
 }
 
-input:focus-visible {
-    outline: none;
-}
-
 .banner-title {
     align-items: center;
     position: absolute;
@@ -36,7 +35,35 @@ input:focus-visible {
     text-align: center;
     font-weight: bold;
 }
+/*navigation styles*/
 
+.navigation {
+    width: 100%;
+    height: 50px;
+    background-color: lightslategrey;
+    border-radius: 20px;
+}
+.navigation ul {
+    display: none;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    padding: 0 40px;
+}
+
+.navigation ul li {
+    list-style-type: none;
+    padding-right: 10px;
+}
+
+.burger-menu {
+    margin-right: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.menu-item-li {
+    margin-top: 50px;
+}
 .navBarMenu {
     width: 100%;
     display: flex;
@@ -55,11 +82,113 @@ input:focus-visible {
     font-weight: bold;
     text-decoration: none;
 }
+/*main page styles*/
+
+.posts-wrapper{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.post-wrapper {
+    display: flex;
+    flex-direction: column ;
+    width: 300px;
+    height: 200px;
+    border: solid 1px #e7e0e0;
+    margin: 0 4px 80px 4px;
+    box-shadow: 1px 1px 6px 1px  #d9d5d5;
+}
+.post-title {
+    overflow: hidden;
+    max-height: 34px;
+    padding: 10px 20px 0 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.post-text {
+    max-height: 50px;
+    padding: 20px 20px 0 20px;
+    overflow: hidden;
+    color: lightslategray;
+    font-size: 18px;
+}
+.postFlex {
+    justify-content: space-between;
+}
+.button-bottom{
+    margin-bottom: 20px;
+    align-self: end;
+}
+.post-button {
+    text-align: end;
+    margin: 30px 20px  0 ;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: unset;
+}
+/*modal styles*/
+
+.modal-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.close {
+    color: black;
+    font-size: 20px;
+    padding: 25px ;
+    cursor: pointer;
+}
+
+.modal-title {
+    text-align: center;
+    padding-left: 20px;
+    margin: 20px 0 20px 0;
+    color: black;
+    font-weight: bold;
+}
+.modal-image {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.darkBG {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0.5;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centered {
+    position: fixed;
+    z-index: 1001;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+    background: white;
+    color: white;
+    z-index: 1005;
+    border: solid 1px #e7e0e0;
+    box-shadow: 1px 1px 6px 1px  #d9d5d5;
+}
+/*service page styles*/
 
 .service-wrapper {
     display: flex;
     justify-content: space-between;
-    width: 400px;
+    width: 300px;
     height: 200px;
     border: solid 1px #e7e0e0;
     margin: 0 8px 80px 4px;
@@ -89,109 +218,8 @@ input:focus-visible {
     cursor: pointer;
 
 }
-.posts-wrapper{
-    margin-top:100px ;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-}
+/*service form styles*/
 
-.post-wrapper {
-    display: flex;
-    flex-direction: column ;
-    width: 400px;
-    height: 200px;
-    border: solid 1px #e7e0e0;
-    margin: 0 4px 80px 4px;
-    box-shadow: 1px 1px 6px 1px  #d9d5d5;
-}
-
-.post-title {
-    padding-top: 15px;
-    color: black;
-    padding-left: 20px;
-    font-weight: bold;
-}
-.post-text {
-    padding-top: 20px;
-    padding-left: 20px;
-    color: lightslategray;
-    font-size: 18px;
-}
-.postFlex {
-    justify-content: space-between;
-}
-.button-bottom{
-    margin-bottom: 20px;
-    align-self: end;
-}
-
-.post-button {
-    text-align: end;
-    margin: 30px 20px  0 ;
-    padding: 5px;
-    border: none;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: bold;
-    background-color: unset;
-}
-.footer{
-    padding-top: 50px;
-    text-align: center;
-    background-color: lightsteelblue;
-    height: 100px;
-    color: white;
-    margin-bottom: 20px ;
-}
-.modal-header {
-    display: flex;
-    justify-content: space-between;
-}
-.close {
-    color: black;
-    font-size: 20px;
-    padding: 25px ;
-    cursor: pointer;
-}
-
-.modal-title {
-    padding-left: 20px;
-    margin: 20px 0 20px 0;
-    color: black;
-    font-weight: bold;
-}
-.modal-image {
-    padding-left: 20px;
-}
-.darkBG {
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.9);
-    opacity: 0.5;
-    width: 100%;
-    height: 100vh;
-    z-index: 1000;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.centered {
-    position: fixed;
-    z-index: 1001;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.modal {
-    width: 100%;
-    height: 400px;
-    background: white;
-    color: white;
-    z-index: 1005;
-    border: solid 1px #e7e0e0;
-    box-shadow: 1px 1px 6px 1px  #d9d5d5;
-}
 .service-form{
     width: 100%;
     height: 600px;
@@ -203,11 +231,20 @@ input:focus-visible {
     border: solid 1px #e7e0e0;
     box-shadow: 1px 1px 6px 1px  #d9d5d5;
 }
+
+input:focus-visible {
+    outline: none;
+}
+
 .content {
-    width: 700px;
     height: 600px;
     margin: 0 30px 0 20px;
 }
+.header-title {
+    margin-top: 23px;
+    font-size: 30px;
+}
+
 .service-form-title{
     color: black;
     font-size: 15px;
@@ -234,12 +271,13 @@ input:focus-visible {
     outline: none;
 }
 
-.close {
+.form-close {
     margin: 30px 20px  0 ;
     padding: 10px 20px 10px 20px;
     font-size: 15px;
     color: black;
     border: 1px solid #e7e0e0;
+    box-shadow: 1px 1px 6px 1px  #d9d5d5;
 }
 .form-button {
     text-align: center;
@@ -257,43 +295,39 @@ input:focus-visible {
     justify-content: flex-end;
     margin-bottom: 30px;
 }
-.none {
-    display: none;
-}
+/*footer style*/
 
-.inline {
-    display: inline;
+.footer{
+    padding-top: 50px;
+    text-align: center;
+    background-color: lightsteelblue;
+    height: 100px;
+    color: white;
+    margin-bottom: 20px;
 }
-
-.navigation {
-    width: 100%;
-    height: 50px;
-    background-color: lightslategrey;
-    border-radius: 20px;
+@media (min-width: 1008px)  {
+    .container {
+        max-width: 998px;
+    }
+    .post-wrapper {
+        width: 400px;
+    }
+    .service-wrapper {
+        width: 400px;
+    }
 }
-.navigation ul {
-    display: none;
-    flex-wrap: wrap;
-    margin: 20px 0;
-    padding: 0 25px;
+@media (max-width: 640px)  {
+    .container {
+        max-width: 100%;
+    }
+    .post-wrapper {
+        width: 100%;
+    }
+    .service-wrapper {
+        width: 100%;
+    }
 }
-
-.navigation ul li {
-    list-style-type: none;
-    padding-right: 10px;
-}
-
-.burger-menu {
-    margin-right: 5px;
-    font-size: 30px;
-    cursor: pointer;
-    display: none;
-}
-.menu-item-li {
-    margin-top: 50px;
-}
-
-@media ( max-width: 830px) {
+@media (max-width: 1007px) {
     .navBarMenu {
         display: flex;
         justify-content: space-between;
@@ -320,11 +354,16 @@ input:focus-visible {
     .menu-item {
        margin-right: 100px;
     }
-    .post-wrapper {
-        width: 100%;
+    .modal-text {
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
-    .service-wrapper {
-        width: 100%;
+
+   .add-form {
+       padding-left: 50px;
+   }
+    .header-title{
+        font-size: 20px;
     }
     .service-form {
         width: 100%;

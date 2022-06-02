@@ -14,7 +14,7 @@ const PostModal = (props) => {
                     </div>
                     <hr/>
                     <img className='modal-image' style={{width: 100}} src={`${props.post.image}`} alt="postImage"/>
-                    <p className='post-text'> {props.post.description}</p>
+                    <p className='modal-text post-text'> {props.post.description}</p>
                 </div>
             </div>
             <div className='darkBG'> </div>

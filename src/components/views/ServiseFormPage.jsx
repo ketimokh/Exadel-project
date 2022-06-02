@@ -20,7 +20,7 @@ const ServiceFormPage = (props) => {
                     <form onSubmit={formik.handleSubmit}>
                         <div className='content'>
                             <div className='modal-header'>
-                                <h3 style={{marginTop: 30, fontSize: 30}}> Create new service</h3>
+                                <h3 className='header-title'> Create new service</h3>
                                 <FontAwesomeIcon icon={faXmark} className='close' onClick={()=> props.setService(null)} />
                             </div>
                             <hr/>
@@ -53,7 +53,7 @@ const ServiceFormPage = (props) => {
                             </div>
                             <hr/>
                             <div className='submit-button'>
-                                <button type='submit' className='close' onClick={()=> props.setService(null)}>
+                                <button type='submit' className='form-close' onClick={()=> props.setService(null)}>
                                     close
                                 </button>
                                 <button type='submit' className='form-button'>save changes</button>
