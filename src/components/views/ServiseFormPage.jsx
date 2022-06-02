@@ -5,7 +5,7 @@ import { useFormik } from 'formik';
 
 const ServiceFormPage = (props) => {
     const formik = useFormik({
-        initialValues: {title: props.service.title, description: props.service.description},
+        initialValues: { title: props.service.title, description: props.service.description },
         onSubmit: values => {
             const fakeId = Math.floor((Math.random() * 10000) + 1)
             props.setServices(prev => ([...prev, {id: fakeId, title: values.title, description: values.description}]))

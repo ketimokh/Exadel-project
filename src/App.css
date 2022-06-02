@@ -1,5 +1,4 @@
 /*Common styles*/
-
 body {
     background-color: #ebe5e5;
     overflow: auto;
@@ -12,11 +11,9 @@ body {
 }
 
 /*banner styles*/
-
 .image-container {
     max-width: 100%;
 }
-
 .banner-image{
     position: relative;
     background-repeat: no-repeat;
@@ -25,7 +22,6 @@ body {
     height: 400px;
     border-radius: 10px;
 }
-
 .banner-title {
     align-items: center;
     position: absolute;
@@ -49,12 +45,10 @@ body {
     margin: 20px 0;
     padding: 0 40px;
 }
-
 .navigation ul li {
     list-style-type: none;
     padding-right: 10px;
 }
-
 .burger-menu {
     margin-right: 5px;
     font-size: 30px;
@@ -73,12 +67,12 @@ body {
     background-color: grey;
     cursor: pointer;
     border-radius: 30px;
-    padding: 5px 50px 5px 50px;
 }
 .menu-item {
     margin-left: 100px;
     color: black;
     font-size: 20px;
+    padding: 5px 50px 5px 50px;
     font-weight: bold;
     text-decoration: none;
 }
@@ -336,7 +330,7 @@ input:focus-visible {
         display: none;
     }
     .burger-menu {
-       display: inline;
+        display: inline;
     }
     .navigation ul {
         display: flex;
@@ -352,16 +346,16 @@ input:focus-visible {
         border-radius: 20px;
     }
     .menu-item {
-       margin-right: 100px;
+        margin-right: 100px;
     }
     .modal-text {
         padding-top: 20px;
         padding-bottom: 20px;
     }
 
-   .add-form {
-       padding-left: 50px;
-   }
+    .add-form {
+        padding-left: 50px;
+    }
     .header-title{
         font-size: 20px;
     }

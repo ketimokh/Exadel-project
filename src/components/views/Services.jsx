@@ -1,16 +1,9 @@
-import {useEffect, useState} from "react";
 import ServiceFormPage from "./ServiseFormPage";
 import Tbilisi from '../../images/tbilisi.jpg'
+import useServices from "../hooks/useServices";
 
 const Services = () => {
-    const [services, setServices] = useState([])
-    const [service, setService] = useState(null)
-
-    useEffect(() => {
-        fetch('https://api.npoint.io/44c1c313d40c0811ad19?fbclid=IwAR0aHCzzz2cy35cADlBCVZT0Dp0nFghbwAsKpTw-bDh-CrTaDJlIAVE3oCI')
-            .then((res)=> res.json())
-            .then((data) => setServices(data.slice(0, 2)))
-    },[])
+const { service, setService, services, setServices} = useServices()
     return (
         <div className='service-container'>
             <div className='add-form'>
